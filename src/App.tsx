@@ -4,7 +4,7 @@ import Body from "./layouts/Body";
 import Header from "./layouts/Header";
 import Footer from "./layouts/Footer";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
       <Header />

@@ -1,8 +1,13 @@
 import React from 'react'
+import '../../src/layouts/footer.scss'
+import DarkModeButton from '../components/DarkModeButton/DarkModeButton'
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
-    <div>Footer</div>
+    <div className='footer'>
+        <p>André Costa</p>
+        <DarkModeButton />
+    </div>
   )
 }
 

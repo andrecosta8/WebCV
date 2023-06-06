@@ -1,8 +1,13 @@
 import React from 'react'
+import background from '../../assets/img/dev-white.png'
+import '../../views/Home/home.scss'
 
-const Home = () => {
+const Home: React.FC = () => {
   return (
-    <div>Home</div>
+    <div>
+    <img className='background-image' src={background} alt="background"/>
+    </div>
+    
   )
 }
 
