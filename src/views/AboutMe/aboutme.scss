@@ -1,0 +1,53 @@
+.aboutme-page {
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-leftside {
+    width: 40vw;
+    height: 100vh;
+    background-color: lightblue;
+    animation: fadeIn 5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &.dark {
+        background-color: blue;
+        animation: fadeIn 5s;
+    }
+}
+
+.about-rightside {
+    width: 60vw;
+    height: 100vh;
+    background-color: lightcoral;
+    animation: fadeIn 5s;
+
+    &.dark {
+        background-color: red;
+        animation: fadeIn 5s;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.description {
+    padding: 50px;
+    text-align: justify;
+}
+
+.foto {
+    margin-top: 100px;
+    width: 280px;
+    height: 280px;
+    background-color: black;
+}

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import backgroundWhite from "../../assets/img/dev-white.png";
+import backgroundLight from "../../assets/img/dev-light.png";
 import backgroundDark from "../../assets/img/dev-dark.png";
 import "../../views/Home/home.scss";
 import { DarkModeContext } from "../../contexts/DarkModeContext/DarkModeContext";
@@ -7,20 +7,12 @@ import { DarkModeContext } from "../../contexts/DarkModeContext/DarkModeContext"
 const Home: React.FC = () => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div>
-      {darkMode ? (
+    <div className="home-page">
         <img
-          className={`background-image ${darkMode ? "dark" : ""} `}
-          src={backgroundDark}
+          className={`background-image ${darkMode ? "dark" : "light"} `}
+          src={darkMode? backgroundDark : backgroundLight}
           alt="background"
         />
-      ) : (
-        <img
-          className={`background-image ${darkMode ? "dark" : ""} `}
-          src={backgroundWhite}
-          alt="background"
-        />
-      )}
     </div>
   );
 };
