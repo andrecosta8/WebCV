@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../../components/Navbar/navbar.scss";
 import { useNavigate } from "react-router-dom";
 import DarkModeButton from "../DarkModeButton/DarkModeButton";
+import { DarkModeContext } from "../../contexts/DarkModeContext/DarkModeContext";
 
 const Navbar: React.FC = () => {
   const navigate = useNavigate();
+  const { darkMode } = useContext(DarkModeContext);
+
   return (
-    <div className="navbar-container">
+    <div className={`navbar-container ${darkMode ? "dark" : ""}`}>
       <div className="navbar-leftside">LEFT</div>
       <div className="navbar-middle">
         <p className="navbar-item" onClick={() => navigate("/")}>Home</p>
