@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import Card, { CardProps } from "../../components/Card/Card";
 import { getAllExperience } from "../../services/apiCalls";
-import '../Experience/experience.scss'
+import "../Experience/experience.scss";
 import { DarkModeContext } from "../../contexts/DarkModeContext/DarkModeContext";
 
 const Experience: React.FC = () => {

@@ -12,13 +12,13 @@
     margin-right: 5px;
     margin-bottom: 10px;
     animation: fadeIn 2s;
-    
+
     &:hover {
         transform: translateX(-8px);
-        box-shadow: -4px -3px 45px 21px rgba(0,0,0,0.35);
-      }
-    
-      &.dark:hover {
+        box-shadow: -4px -3px 45px 21px rgba(0, 0, 0, 0.35);
+    }
+
+    &.dark:hover {
         box-shadow: -4px -3px 45px 21px rgb(250, 250, 250);
     }
 }
@@ -28,12 +28,12 @@
 }
 
 .time {
-   height: 40px;
+    height: 40px;
 }
 
 .card-description {
     height: 100px;
-    text-align:center;
+    text-align: center;
 }
 
 .toggle {

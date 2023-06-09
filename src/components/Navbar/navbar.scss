@@ -1,6 +1,6 @@
 //Variables
 $gold-details: rgb(197, 120, 20);
-$gold-background:goldenrod;
+$gold-background: goldenrod;
 
 .navbar-container {
     display: flex;
@@ -85,15 +85,17 @@ $gold-background:goldenrod;
         border: 3px solid;
         border-color: $gold-details;
         background-color: $gold-background;
-        color:$gold-details;
+        color: $gold-details;
         font-size: large;
         font-weight: 700;
     }
-    
-    .navbar-item{
+
+    .navbar-item {
         font-weight: 700;
         text-decoration: underline;
-        &.dark{
-        background-color: black;
-    }     }
+
+        &.dark {
+            background-color: black;
+        }
+    }
 }

@@ -22,12 +22,12 @@ const Card: React.FC<CardProps> = ({
   const [time, setTime] = useState("");
 
   useEffect(() => {
-   defineTime()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[]);
+    defineTime();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
-    setInterval(defineTime, 60 *1000)
+    setInterval(defineTime, 60 * 1000);
   });
 
   const handleExpand = () => {
@@ -53,14 +53,18 @@ const Card: React.FC<CardProps> = ({
         <h1 className="title">{title}</h1>
         <h3 className="institution">{institution}</h3>
         <div className="time">{time}</div>
-        {!expanded ?  
-          <div className="toggle" onClick={handleExpand}>Show More</div>
-         : null}
+        {!expanded ? (
+          <div className="toggle" onClick={handleExpand}>
+            Show More
+          </div>
+        ) : null}
       </div>
       {expanded && (
         <div className="card-details">
           <p className="card-description">{description}</p>
-          <div className="toggle" onClick={handleExpand}>Hide</div>
+          <div className="toggle" onClick={handleExpand}>
+            Hide
+          </div>
         </div>
       )}
     </div>

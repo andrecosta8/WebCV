@@ -10,14 +10,14 @@ const Navbar: React.FC = () => {
   const { darkMode } = useContext(DarkModeContext);
   const [isOpen, setIsOpen] = useState(false);
 
-  useEffect(()=> {
-    toggleMenu()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [navigate])
+  useEffect(() => {
+    toggleMenu();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [navigate]);
 
-  useEffect(()=> {
+  useEffect(() => {
     setIsOpen(false);
-  }, [])
+  }, []);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -34,7 +34,7 @@ const Navbar: React.FC = () => {
           />
         </div>
         <div className="navbar-middle">
-          <p className="navbar-item" onClick={() => navigate("/") }>
+          <p className="navbar-item" onClick={() => navigate("/")}>
             Home
           </p>
           <p className="navbar-item" onClick={() => navigate("/about")}>

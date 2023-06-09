@@ -18,15 +18,15 @@ $default-image-transition: 0.5s linear;
 
     &.dark {
         background-image:
-        url("../../src/assets/img/dark-world.jpg");
+            url("../../src/assets/img/dark-world.jpg");
         transition: $default-image-transition;
         color: white;
     }
 }
 
 @media screen and (max-width: 768px) {
-   .footer{
-    margin-left: 0;
-    margin-right: 0;
-   }
+    .footer {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

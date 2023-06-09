@@ -1,8 +1,10 @@
-import React, { useContext, useEffect, useState } from 'react';
-import ContactCard, {ContactCardProps}  from '../../components/ContactCard/ContactCard';
-import { getAllContacts } from '../../services/apiCalls';
-import '../Contacts/contacts.scss'
-import { DarkModeContext } from '../../contexts/DarkModeContext/DarkModeContext';
+import React, { useContext, useEffect, useState } from "react";
+import ContactCard, {
+  ContactCardProps,
+} from "../../components/ContactCard/ContactCard";
+import { getAllContacts } from "../../services/apiCalls";
+import "../Contacts/contacts.scss";
+import { DarkModeContext } from "../../contexts/DarkModeContext/DarkModeContext";
 
 const Contacts: React.FC = () => {
   const { darkMode } = useContext(DarkModeContext);

@@ -7,12 +7,20 @@ const AboutMe: React.FC = () => {
   return (
     <div className={`aboutme-page ${darkMode ? "dark" : ""} `}>
       <div className={`about-leftside ${darkMode ? "dark" : ""} `}>
-        <img className={`photo ${darkMode ? "dark" : ""} `} src="https://media.licdn.com/dms/image/D4D03AQH_fW02L48Kpw/profile-displayphoto-shrink_800_800/0/1680459127578?e=1691625600&v=beta&t=YFCmmgPSzFQU93Icbu6M5hVDOIYEEboerrKuFcKGf8Q" alt="andre"></img>
+        <img
+          className={`photo ${darkMode ? "dark" : ""} `}
+          src="https://media.licdn.com/dms/image/D4D03AQH_fW02L48Kpw/profile-displayphoto-shrink_800_800/0/1680459127578?e=1691625600&v=beta&t=YFCmmgPSzFQU93Icbu6M5hVDOIYEEboerrKuFcKGf8Q"
+          alt="andre"
+        ></img>
         <p className={`about-name ${darkMode ? "dark" : ""} `}>André Costa</p>
-        <span className={`about-place ${darkMode ? "dark" : ""} `}>Porto, Portugal</span>
+        <span className={`about-place ${darkMode ? "dark" : ""} `}>
+          Porto, Portugal
+        </span>
       </div>
       <div className={`about-rightside ${darkMode ? "dark" : ""} `}>
-        <h1 className={`about-title ${darkMode ? "dark" : ""} `}>About me...</h1>
+        <h1 className={`about-title ${darkMode ? "dark" : ""} `}>
+          About me...
+        </h1>
         <p className={`about-description ${darkMode ? "dark" : ""} `}>
           My name is André and I am a Portuguese 33 years old guy from Porto. My
           background is about ten years of mechanical engineering and business

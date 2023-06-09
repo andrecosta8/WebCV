@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useState } from "react";
 import Card, { CardProps } from "../../components/Card/Card";
 import { getAllEducation } from "../../services/apiCalls";
-import '../Education/education.scss'
+import "../Education/education.scss";
 import { DarkModeContext } from "../../contexts/DarkModeContext/DarkModeContext";
 
 const Education: React.FC = () => {
@@ -23,19 +23,19 @@ const Education: React.FC = () => {
 
   return (
     <>
-    {educationInfo && 
-    <div className={`education-page ${darkMode ? "dark" : ""}`}>
-      {educationInfo.map((item: CardProps) => (
-        <Card
-          key={item.id}
-          title={item.title}
-          institution={item.institution}
-          startDate={item.startDate}
-          description={item.description}
-        />
-      ))}
-    </div>
-}
+      {educationInfo && (
+        <div className={`education-page ${darkMode ? "dark" : ""}`}>
+          {educationInfo.map((item: CardProps) => (
+            <Card
+              key={item.id}
+              title={item.title}
+              institution={item.institution}
+              startDate={item.startDate}
+              description={item.description}
+            />
+          ))}
+        </div>
+      )}
     </>
   );
 };
