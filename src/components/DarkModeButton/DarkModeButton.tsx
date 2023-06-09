@@ -1,11 +1,13 @@
 import React, { useContext } from "react";
 import { DarkModeContext } from "../../contexts/DarkModeContext/DarkModeContext";
+import '../DarkModeButton/darkModeButton.scss'
 
 const DarkModeButton: React.FC = () => {
-  const { toggleDarkMode } = useContext(DarkModeContext);
+  const { toggleDarkMode, darkMode } = useContext(DarkModeContext);
+
   return (
-    <button className="darkMode-button" onClick={toggleDarkMode}>
-      Dark Mode
+    <button className={`toggleMode ${darkMode ? "dark" : ""} `} onClick={toggleDarkMode}>
+      {darkMode ? <p>Light</p> : <p>Dark</p> }
     </button>
   );
 };

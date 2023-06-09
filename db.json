@@ -1,0 +1,92 @@
+{
+    "education": [
+        {
+            "id": "1",
+            "title": "Management",
+            "institution": "Universidade Aberta",
+            "startDate": "2019-10-01T00:00:00.000Z",
+            "description": " Management and business principles, HR management,   financial flow and investments"
+        },
+        {
+            "id": "2",
+            "title": "ReactJS Bootcamp",
+            "institution": "GeeksHubs",
+            "startDate": "2022-10-13T00:00:00.000Z",
+            "description": "Javascript, HTML, CSS, advanced React"
+        },
+        {
+            "id": "3",
+            "title": "MERN Bootcamp",
+            "institution": "Ironhack",
+            "startDate": "2022-02-01T00:00:00.000Z",
+            "description": "MERN Stack (MongoDB, Express, React, Node"
+        },
+        {
+            "id": "4",
+            "title": "Mechanical Engineering",
+            "institution": "ISEP",
+            "startDate": "2009-09-01T00:00:00.000Z",
+            "description": "Physics, Math, Metal and non metal materials, engines, HVAC, Thermodynamics and industrial procedures."
+        }
+    ],
+    "experience": [
+        {
+            "id": "1",
+            "title": "FullStack Developer",
+            "institution": "Sportlocker",
+            "startDate": "2023-05-01T00:00:00.000Z",
+            "description": "Freelancer FullStack Development: React - Javascript - Git - PHP - Laravel - HTML -CSS"
+        },
+        {
+            "id": "2",
+            "title": "Frontend Developer",
+            "institution": "NEW Work SE (kununu)",
+            "startDate": "2022-10-13T00:00:00.000Z",
+            "description": "Frontend Development in Admin App of kununu : React - Javascript - Git - Jest - Agile - Scrum"
+        },
+        {
+            "id": "3",
+            "title": "Site Manager",
+            "institution": "Controsol",
+            "startDate": "2021-03-01T00:00:00.000Z",
+            "description": "Management of works and teams to carry out the works. Technical resolution of construction conflicts"
+        },
+        {
+            "id": "4",
+            "title": "Sales Department",
+            "institution": "EFCIS Comercio Internacional",
+            "startDate": "2016-12-01T00:00:00.000Z",
+            "description": "HVAC customer and project management. Store, warehouse and supplier management. CRM Development."
+        }
+    ],
+    "contacts": [
+        {
+            "id": "1",
+            "logo": "https://cdn-icons-png.flaticon.com/512/3178/3178158.png",
+            "type": "Email",
+            "info": "andrecosta8@gmail.com",
+            "url": ""
+        },
+        {
+            "id": "2",
+            "logo": "https://cdn-icons-png.flaticon.com/512/6596/6596115.png",
+            "type": "Phone",
+            "info": "+351 913488336",
+            "url": ""
+        },
+        {
+            "id": "3",
+            "logo": "https://blog.waalaxy.com/wp-content/uploads/2021/01/LinkedIn-Symbole-768x432.png",
+            "type": "Linkedin",
+            "info": "",
+            "url": "https://www.linkedin.com/in/afacosta/"
+        },
+        {
+            "id": "4",
+            "logo": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+            "type": "Github",
+            "info": "",
+            "url": "https://github.com/andrecosta8"
+        }
+    ]
+}

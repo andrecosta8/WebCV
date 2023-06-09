@@ -1,9 +1,26 @@
 .footer {
-    width:100%;
+    width: 100vw;
     height: 10vh;
-    background-color: black;
-    color:white;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    font-size: larger;
+    font-weight: 700;
+    transition: 0.5s linear;
+    background-image:
+        url("../../src/assets/img/bricks.jpg");
+
+    &.dark {
+        background-image:
+        url("../../src/assets/img/dark-bricks.jpg");
+        transition: 0.5s linear;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 768px) {
+   .footer{
+    margin-left: 0;
+    margin-right: 0;
+   }
 }

@@ -1,0 +1,19 @@
+.toggleMode {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border:3px solid;
+    border-color: lightgrey;
+    background-color:grey;
+    color: lightblue;
+
+    &.dark{
+        border-color: black;
+        background-color: orange;
+        color: black;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

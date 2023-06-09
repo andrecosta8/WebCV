@@ -1,53 +1,79 @@
 .aboutme-page {
     display: flex;
     justify-content: space-around;
+    animation: fadeIn 1s;
+    background-image:
+      url("../../assets/img/bricks.jpg");
+        transition: 0.5s linear;
+    // background: rgb(2, 0, 36);
+    // background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 3%, rgba(0, 175, 255, 1) 37%);
+
+    &.dark{
+        background-image:
+        url("../../assets/img/dark-bricks.jpg");
+        transition: 0.5s linear;
+        // background: rgb(2, 0, 36);
+        // background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 74%, rgba(0, 175, 255, 1) 97%);
+        color:white;
+    }
 }
 
 .about-leftside {
     width: 40vw;
-    height: 100vh;
-    background-color: lightblue;
-    animation: fadeIn 5s;
+    height: 100vh;    
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    &.dark {
-        background-color: blue;
-        animation: fadeIn 5s;
-    }
 }
 
 .about-rightside {
     width: 60vw;
     height: 100vh;
-    background-color: lightcoral;
-    animation: fadeIn 5s;
-
-    &.dark {
-        background-color: red;
-        animation: fadeIn 5s;
-    }
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-.description {
+.about-description {
     padding: 50px;
     text-align: justify;
+    padding-top: 60px;
+    font-size: larger;
+    font-weight: 400;
 }
 
-.foto {
+.about-title{
+    padding-top: 70px; 
+}
+
+.about-name, .about-place {
+    font-size: larger;
+    font-weight: 700;
+}
+
+.photo {
     margin-top: 100px;
     width: 280px;
     height: 280px;
-    background-color: black;
+    border: 10px solid;
+    border-radius: 30%;
 }
+
+@media screen and (max-width: 768px) {
+    .aboutme-page{
+        height: 100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-leftside {
+        max-height: 550px;
+        width: 100vw;
+    }
+
+    .about-rightside {
+        height: 100%;
+        width: 100vw;
+    }
+   
+}
+

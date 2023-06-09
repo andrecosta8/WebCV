@@ -5,42 +5,28 @@ import { DarkModeContext } from "../../contexts/DarkModeContext/DarkModeContext"
 const AboutMe: React.FC = () => {
   const { darkMode } = useContext(DarkModeContext);
   return (
-    <div className="aboutme-page">
+    <div className={`aboutme-page ${darkMode ? "dark" : ""} `}>
       <div className={`about-leftside ${darkMode ? "dark" : ""} `}>
-        <div className="foto"></div>
-        <p>André Costa</p>
-        <p>Porto, Portugal</p>
+        <img className={`photo ${darkMode ? "dark" : ""} `} src="https://media.licdn.com/dms/image/D4D03AQH_fW02L48Kpw/profile-displayphoto-shrink_800_800/0/1680459127578?e=1691625600&v=beta&t=YFCmmgPSzFQU93Icbu6M5hVDOIYEEboerrKuFcKGf8Q" alt="andre"></img>
+        <p className={`about-name ${darkMode ? "dark" : ""} `}>André Costa</p>
+        <p className={`about-place ${darkMode ? "dark" : ""} `}>Porto, Portugal</p>
       </div>
       <div className={`about-rightside ${darkMode ? "dark" : ""} `}>
-        <h1>About me...</h1>
-        <p className="description">
-          As a Frontend Developer with an MSc in Applied Biology, I offer a
-          unique fusion of scientific expertise, a decade of research
-          experience, and proficiency in coding, blending creativity and
-          technical skills. As an experienced traveler, I enjoy immersing myself
-          in local cultures and capturing their essence through photography,
-          with a focus on nature and street scenes. As a sci-fi aficionado, I am
-          constantly inspired by the boundless possibilities of the genre. My
-          love for cats, particularly my two plump Siamese companions, further
-          reflects my caring and empathetic nature. If you're looking for a
-          dynamic team player, with an adventurous spirit, eager to launch
-          himself into innovative projects and adapt to constantly changing
-          environments, but always learning and embracing challenges, you've
-          found the right person! I'm excited to make a real impact on projects
-          and support the team's success. 🦄 As a Frontend Developer with an MSc
-          in Applied Biology, I offer a unique fusion of scientific expertise, a
-          decade of research experience, and proficiency in coding, blending
-          creativity and technical skills. As an experienced traveler, I enjoy
-          immersing myself in local cultures and capturing their essence through
-          photography, with a focus on nature and street scenes. As a sci-fi
-          aficionado, I am constantly inspired by the boundless possibilities of
-          the genre. My love for cats, particularly my two plump Siamese
-          companions, further reflects my caring and empathetic nature. If
-          you're looking for a dynamic team player, with an adventurous spirit,
-          eager to launch himself into innovative projects and adapt to
-          constantly changing environments, but always learning and embracing
-          challenges, you've found the right person! I'm excited to make a real
-          impact on projects and support the team's success. 🦄
+        <h1 className={`about-title ${darkMode ? "dark" : ""} `}>About me...</h1>
+        <p className={`about-description ${darkMode ? "dark" : ""} `}>
+          My name is André and I am a Portuguese 33 years old guy from Porto. My
+          background is about ten years of mechanical engineering and business
+          management in different markets and contexts, but my passion is
+          software development. A little over a year ago I decided to change my
+          career 100% and do a FullStack Web Developer Bootcamp (MERN Stack) at
+          Ironhack.<br></br>Since then, I've been chasing the opportunity to be
+          valuable in this area and grow as a programmer, accepting all
+          challenges. <br></br> I consider myself a problem solver, a team
+          player and a creative person. With ten years of work experience, I
+          developed a few soft skills such as good communication, a quality that
+          I consider fundamental to all jobs. I am a fast learner and I like to
+          be challenged, take risks and push myself to the limit. As hobbies, I
+          like to play padel, do sim-racing races and travel.
         </p>
       </div>
     </div>
