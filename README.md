@@ -8,6 +8,7 @@ The project has a Homepage, About me page, Education page, Experience page and a
 
 ## Deployed app
 
+IMPORTANT!!! deploy with some bugs to fix. (better use intructions bellow to have a better experience in the app)
 [Web CV](https://master--precious-snickerdoodle-257c04.netlify.app/) 
 
 ## Instructions
