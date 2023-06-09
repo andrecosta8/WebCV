@@ -22,6 +22,8 @@ const Education: React.FC = () => {
   };
 
   return (
+    <>
+    {educationInfo && 
     <div className={`education-page ${darkMode ? "dark" : ""}`}>
       {educationInfo.map((item: CardProps) => (
         <Card
@@ -33,6 +35,8 @@ const Education: React.FC = () => {
         />
       ))}
     </div>
+}
+    </>
   );
 };
 
