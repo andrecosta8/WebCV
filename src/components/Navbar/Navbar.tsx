@@ -14,6 +14,10 @@ const Navbar: React.FC = () => {
     toggleMenu()
   }, [navigate])
 
+  useEffect(()=> {
+    setIsOpen(false);
+  }, [])
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };

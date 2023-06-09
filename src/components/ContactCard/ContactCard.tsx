@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import '../ContactCard/contactCard.scss'
+import "../ContactCard/contactCard.scss";
 import { DarkModeContext } from "../../contexts/DarkModeContext/DarkModeContext";
 
 export interface ContactCardProps {
@@ -13,15 +13,18 @@ export interface ContactCardProps {
 const ContactCard: React.FC<ContactCardProps> = ({ logo, type, info, url }) => {
   const { darkMode } = useContext(DarkModeContext);
 
-   const handleSocialMediaLink = (url:string|undefined): any => {
-        window.open(url, "_blank");  
-    }
+  const handleSocialMediaLink = (url: string | undefined): any => {
+    window.open(url, "_blank");
+  };
 
   return (
-    <div className={`contact-card ${darkMode ? "dark" : ""}`} onClick={ url ? ()=> handleSocialMediaLink(url) : undefined}>
-      <img className="contact-logo" src={logo} alt={type}/>
+    <div
+      className={`contact-card ${darkMode ? "dark" : ""}`}
+      onClick={url ? () => handleSocialMediaLink(url) : undefined}
+    >
+      {logo && <img className="contact-logo" src={logo} alt={type} />}
       <p>{type}</p>
-      {info ? <p>{info}</p>  : null}
+      <p>{info}</p>
     </div>
   );
 };

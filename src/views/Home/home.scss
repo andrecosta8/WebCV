@@ -1,26 +1,64 @@
 .home-page {
   width: 100vw;
-  height: 100vh;
+  height: 75vh;
   transition: 0.5s linear;
+  display: flex;
+  // justify-content: space-between;
+  align-items: center;
   background-image:
-      url("../../assets/img/bricks.jpg");
-  
-      &.dark{
-        background-image:
-        url("../../assets/img/dark-bricks.jpg");
+    url("../../assets/img/world1.jpg");
+
+  &.dark {
+    background-image:
+      url("../../assets/img/dark-world1.jpg");
+    color: white;
   }
 }
+
 .background-image {
-        width: 100vw;
-        height: auto;
-        animation: fadeIn 5s;  
+  width: 100vw;
+  height: auto;
+  animation: fadeIn 5s;
+}
+
+.andre {
+  left: 0;
+  height: 580px;
+  opacity: 0.8;
+  animation: fadeIn 1.5s;
+}
+
+.welcome {
+  margin-right: 100px;
+  animation: fadeIn 2.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .home-page {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+  .andre {
+    height: 380px;
+  }
+
+  .welcome {
+    width: 100vw;
+    margin-right: 0;;
+  }
 }
 
 @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-        opacity: 1;
-      }
+  from {
+    opacity: 0;
   }
+
+  to {
+    opacity: 1;
+  }
+}

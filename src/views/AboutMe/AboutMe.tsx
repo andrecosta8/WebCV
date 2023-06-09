@@ -9,7 +9,7 @@ const AboutMe: React.FC = () => {
       <div className={`about-leftside ${darkMode ? "dark" : ""} `}>
         <img className={`photo ${darkMode ? "dark" : ""} `} src="https://media.licdn.com/dms/image/D4D03AQH_fW02L48Kpw/profile-displayphoto-shrink_800_800/0/1680459127578?e=1691625600&v=beta&t=YFCmmgPSzFQU93Icbu6M5hVDOIYEEboerrKuFcKGf8Q" alt="andre"></img>
         <p className={`about-name ${darkMode ? "dark" : ""} `}>André Costa</p>
-        <p className={`about-place ${darkMode ? "dark" : ""} `}>Porto, Portugal</p>
+        <span className={`about-place ${darkMode ? "dark" : ""} `}>Porto, Portugal</span>
       </div>
       <div className={`about-rightside ${darkMode ? "dark" : ""} `}>
         <h1 className={`about-title ${darkMode ? "dark" : ""} `}>About me...</h1>

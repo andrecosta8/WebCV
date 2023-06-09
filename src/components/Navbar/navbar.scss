@@ -1,25 +1,28 @@
+//Variables
+$gold-details: rgb(197, 120, 20);
+$gold-background:goldenrod;
+
 .navbar-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width:100vw;
+    width: 100vw;
     height: 120px;
     transition: 0.5s linear;
     border-bottom: 5px solid;
-    border-top: 3px solid;
+    border-color: $gold-details;
     background-image:
-      url("../../assets/img/bricks.jpg");
-   
-    &.dark{
+        url("../../assets/img/world.jpg");
+
+    &.dark {
         background-image:
-      url("../../assets/img/dark-bricks.jpg");
-        transition: 0.5s linear;
+            url("../../assets/img/dark-world.jpg");
         color: white;
     }
 }
 
-.navbar-middle{
-    display:flex;
+.navbar-middle {
+    display: flex;
     justify-content: space-around;
     font-size: larger;
     font-weight: 500;
@@ -28,71 +31,69 @@
 .navbar-item {
     padding: 7px;
 
-&:hover {
-    cursor: pointer;
-    transform: translateY(3px);
-    
-}
+    &:hover {
+        cursor: pointer;
+        transform: translateY(3px);
+
+    }
 }
 
-.webCV{
+.webCV {
+    margin-top: 60px;
+    margin-left: 15px;
+    height: 140px;
+    border: 5px solid;
+    border-color: $gold-details;
+    border-radius: 25%;
+    background-color: $gold-background;
     padding-top: 15px;
     width: 250px;
-    &.dark {
-        filter: brightness(0) invert(1);
-    }
-
 }
 
-.navbar-container-mobile{
+.navbar-container-mobile {
     display: none;
- }
+}
 
 @media screen and (max-width: 768px) {
-//    .navbar-container{
-//     position: fixed;
-//     width: 100vw;
-//     padding-left: 0;
-//     padding-right: 0;
-//    }
-
-//    .webCV {
-//     display:none;
-//    }
-
-.navbar-container{
-    display:none;
-}
-
-.navbar-container-mobile{
-    width: 100vw;
-   display:flex;
-   justify-content: space-between;
-   position: fixed;
-   z-index:1;
-   font-weight: 500;
-   background-image:
-      url("../../assets/img/bricks.jpg");
-      transition: 0.5s linear;
-      border-bottom: 3px solid;
-   
-    &.dark{
-        background-image:
-      url("../../assets/img/dark-bricks.jpg");
-        transition: 0.5s linear;
-        color: white;
+    .navbar-container {
+        display: none;
     }
-}
 
-.mobile-menu-button{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
-    border:3px solid;
-    border-color: lightgrey;
-    background-color:grey;
-    color: lightblue;
-}
+    .navbar-container-mobile {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        z-index: 1;
+        font-weight: 500;
+        background-image:
+            url("../../assets/img/world.jpg");
+        transition: 0.5s linear;
+        border-bottom: 3px solid;
 
-}
+        &.dark {
+            background-image:
+                url("../../assets/img/dark-world.jpg");
+            color: white;
+        }
+    }
 
+    .mobile-menu-button {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+        border: 3px solid;
+        border-color: $gold-details;
+        background-color: $gold-background;
+        color:$gold-details;
+        font-size: large;
+        font-weight: 700;
+    }
+    
+    .navbar-item{
+        font-weight: 700;
+        text-decoration: underline;
+        &.dark{
+        background-color: black;
+    }     }
+}

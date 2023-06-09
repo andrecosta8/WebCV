@@ -1,15 +1,16 @@
 .contact-card {
     width: 200px;
     height: 150px;
-    background-color:lightcyan; 
+    background-color:lightgrey; 
     border: 5px solid;
     border-radius: 15%;
-    border-color: lightslategrey;
+    border-color: rgb(197, 120, 20);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 10px;
+    animation: fadeIn 2s;
 
     &:hover {
         cursor: pointer;
@@ -25,4 +26,5 @@
 .contact-logo {
     width: 50px;
     height: 50px;
+    mix-blend-mode: color-burn;
 }

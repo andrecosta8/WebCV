@@ -5,12 +5,13 @@
     padding: 10px;
     border: 5px solid;
     border-radius: 20%;
-    border-color: lightslategrey;
+    border-color: rgb(197, 120, 20);
     display: flex;
     flex-direction: column;
     margin-left: 5px;
     margin-right: 5px;
     margin-bottom: 10px;
+    animation: fadeIn 2s;
     
     &:hover {
         transform: translateX(-8px);

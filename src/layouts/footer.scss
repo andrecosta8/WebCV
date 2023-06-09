@@ -1,19 +1,25 @@
+// Variables
+$default-desktop-width: 100vw;
+$default-image-transition: 0.5s linear;
+
 .footer {
-    width: 100vw;
+    width: $default-desktop-width;
     height: 10vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: larger;
     font-weight: 700;
-    transition: 0.5s linear;
+    border-top: 3px solid;
+    border-color: rgb(197, 120, 20);
+    transition: $default-image-transition;
     background-image:
-        url("../../src/assets/img/bricks.jpg");
+        url("../../src/assets/img/world.jpg");
 
     &.dark {
         background-image:
-        url("../../src/assets/img/dark-bricks.jpg");
-        transition: 0.5s linear;
+        url("../../src/assets/img/dark-world.jpg");
+        transition: $default-image-transition;
         color: white;
     }
 }
