@@ -12,6 +12,7 @@ const Navbar: React.FC = () => {
 
   useEffect(()=> {
     toggleMenu()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [navigate])
 
   useEffect(()=> {
